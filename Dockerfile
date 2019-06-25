@@ -3,7 +3,7 @@ ENV LC_ALL en_US.UTF-8
 
 RUN yum update -y && yum install -y \
   httpd tomcat \
-  nano
+  nano rsync
 
 RUN ln -sf /usr/share/zoneinfo/Europe/Helsinki /etc/localtime \
   && localedef -i en_US -f UTF-8 en_US.UTF-8
