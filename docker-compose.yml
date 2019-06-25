@@ -1,0 +1,6 @@
+version: '2.1'
+
+services:
+  app:
+    build: .
+    image: mattipaksula/centos7-httpd-tomcat
